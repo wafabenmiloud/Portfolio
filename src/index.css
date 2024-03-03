@@ -12,12 +12,12 @@
 }
 
 :root {
-    --primary-color: #00293d;
+    --primary-color: #82B2CA;
     --secondary-color: #00293d;
-    --font-color: #000;
-    --bg-color: #fff;
-    --heading-color: #00293d;
-    --light-opacity:0;
+    --font-color: #fff;
+    --bg-color: #000e14;
+    --heading-color: hsla(0,0%,100%,.6);
+    --light-opacity:1;
 }
 
 [data-theme="dark"] {
