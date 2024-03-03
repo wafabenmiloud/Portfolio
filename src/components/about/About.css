@@ -6,7 +6,7 @@
     background: linear-gradient(
         45deg,
         transparent,
-        var(--color-primary),
+        var(--primary-color),
         transparent
     );
     display: grid;
@@ -23,49 +23,69 @@
     transform: rotate(0);
 }
 .about__cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-  
+  align-items: flex-end;
     margin: 1rem;
 }
 .about__card{
-    background: var(--color--bg-variant);
+    background: var(--secondary-color);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
     text-align: center;
     transition: var(--transition);
+    width: 60%;
 
 }
 .about__card:hover{
     background: transparent;
-    border-color: var(--color-black);
+    border-color: var(--font-color);
     cursor:default ;
 }
 .about__icon{
-    color: var(--color-primary);
+    color: var(--primary-color);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 .about__card h5{
     font-size: 0.95rem;
+    color: var(--font-color);
+
 }
 .about__card small{
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--heading-color);
 }
 .about__content{
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
 }
 .about__content p{
     margin: 1rem;
     color: white;
     padding: 1rem;
+    text-align: left;
 }
 @media screen and (max-width:1024px) {
+    .about__cards{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+      align-items: center;
+        margin: 1rem;
+    }
+    .about__card{
+      width: 200px;
+    }
+    .about__content {
+      flex-direction: column;
+      display: flex;
+    }
     .about__content p{
         margin: 1.5rem;
         padding: 1rem;
@@ -84,11 +104,7 @@
         width: 35%;
         margin: 3rem auto 3rem;
     }
-    .about__cards{
-        grid-template-columns: 0.5fr 0.5fr;
-        gap: 0.1rem;
-        margin-top: 1rem;
-    }
+ 
     .about__content{
         text-align: center;
     }
@@ -98,13 +114,26 @@
     }
     .about__card{
         padding: 0.5rem;
+        width: 120px;
     }
     .about__icon{
         font-size: 1.4rem;
         margin-bottom: 0.1rem;
+        color: var(--font-color);
+
     }
    
     .about__content p{
         margin: 1.5rem 0 1.5rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .about__cards{
+        display: flex;
+        flex-direction: column;
+      
+    } .about__card{
+        padding: 0.5rem;
+        width: 280px;
     }
 }

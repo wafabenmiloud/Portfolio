@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/codeee.jpg";
 import { FaAward, FaUsers, FaFolder } from "react-icons/fa";
 
 const About = () => {
@@ -24,20 +23,22 @@ const About = () => {
             <article className="about__card">
               <FaFolder className="about__icon" />
               <h5>Projects</h5>
-              <small>5+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
           <p>
-            Hello there! I'm Wafa BEN MILOUD, a dedicated full-stack developer driven by a fervor for crafting innovative digital solutions. Embarking on this exciting journey, I am eager to kickstart my career in this dynamic realm. Proficient in HTML, CSS, and JavaScript, I bring along a skill set that extends to prominent front-end frameworks like React and Vue.js. 
-            <br /><br />My journey doesn't stop there—I've delved into the back-end landscape, harnessing the power of Node.js, alongside databases like MongoDB and MySQL.
+            👋 Hello! I'm Wafa Ben Miloud, a passionate full-stack developer who specializes in building web and mobile applications. With a love for coding, I bring ideas to life using user-friendly interfaces. <br /><br />
 
-            <br /><br />Your time is truly appreciated for delving into my introduction. Should you wish to explore further, I invite you to peruse my portfolio showcasing some of the projects I've had the privilege to contribute to. I hold the doors wide open for any feedback or suggestions that could be instrumental in honing my skills and enriching my expertise in this ever-evolving field. 
-            <br /><br />Thank you for considering my profile!
-          </p>
-          <a href="#contact" className="btn">
+            🌐 Whether it’s building a backend system, creating a responsive frontend, or designing an interface, I’m your go-to person.<br /><br />
+
+            💻 As a full-stack developer, I am comfortable working with a variety of technologies, from front-end languages ​​like HTML, CSS and JavaScript (with frameworks like React and Vue.js) to back-end technologies like Node.js, Express and MongoDB and SQL and other databases. Additionally, I have experience developing mobile applications using frameworks like React Native and Flutter. <br /><br />
+            ✨ Let's collaborate and turn your vision into reality! Whether you're looking to build a stunning website or a sleek mobile app, I'm here to make it happen.
+            <br /><br />  <a href="#contact" className="btn">
             {" "}
             Let's Talk !
           </a>
+          </p>
+       
         </div>
       </div>
     </section>
