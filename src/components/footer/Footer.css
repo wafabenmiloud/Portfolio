@@ -1,7 +1,7 @@
 footer{
     background: url(../../assets/blobs.svg) no-repeat bottom / cover;
     background-color: var(--bg-color);
-height: 600px;
+    height: 300px;
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;

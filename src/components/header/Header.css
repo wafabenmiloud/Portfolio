@@ -2,7 +2,7 @@ header {
   overflow: hidden;
   background: url(../../assets/bgblobs.svg) no-repeat bottom / cover;
   color: var(--bg-color);
-  padding: 150px 0px;
+  padding: 8rem 0;
 }
 .lamp_wrapper{
   width: 80px;
@@ -85,7 +85,6 @@ header {
   align-items: center;
   gap: 0.8rem;
 }
-
 .header__socials::after {
   content: "";
   width: 1px;

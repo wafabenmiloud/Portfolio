@@ -67,11 +67,17 @@
 }
 .about__content p{
     margin: 1rem;
-    color: white;
+    color: var(--font-color);
     padding: 1rem;
     text-align: left;
 }
+@media screen and (max-width:1280px) {
+    .about__card{
+        width: 100%;
+      }
+}
 @media screen and (max-width:1024px) {
+    
     .about__cards{
         display: flex;
         flex-direction: row;
@@ -79,9 +85,7 @@
       align-items: center;
         margin: 1rem;
     }
-    .about__card{
-      width: 200px;
-    }
+   
     .about__content {
       flex-direction: column;
       display: flex;

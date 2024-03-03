@@ -30,12 +30,7 @@ const Contact = () => {
               <h5>Wafabenmiloud@gmail.com</h5>
               <a href="mailto:wafabenmiloud@gmail.com">Send a message</a>
             </article>
-            <article className='contact__option'>
-            <BsMessenger className='contact__option-icon'/>
-              <h4>Messenger</h4>
-              <h5>Wafa ben miloud</h5>
-              <a href="https://m.me/Wafouta.wafouta3" target='_blank'>Send a message</a>
-            </article>
+            
             <article className='contact__option'>
             <AiOutlineWhatsApp className='contact__option-icon'/>
               <h4>WhatsApp</h4>
@@ -43,7 +38,14 @@ const Contact = () => {
               <a href="https://api.whatsapp.com/send?phone=21652095367&text=Let's%20Talk%20!" target='_blank'>Send a message</a>
             </article>
           </div>
-          {/* <form onSubmit={sendEmail} ref={form}>
+          {/* 
+          <article className='contact__option'>
+            <BsMessenger className='contact__option-icon'/>
+              <h4>Messenger</h4>
+              <h5>Wafa ben miloud</h5>
+              <a href="https://m.me/Wafouta.wafouta3" target='_blank'>Send a message</a>
+            </article>
+          <form onSubmit={sendEmail} ref={form}>
             <input type="text" name='name' placeholder='Your full name' required />
             <input type="email" name='email' placeholder='example@gmail.com' required />
             <textarea name="message" rows="7" placeholder='Your message' required></textarea>

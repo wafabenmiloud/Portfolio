@@ -12,12 +12,12 @@
 }
 
 :root {
-    --primary-color: #82B2CA;
+    --primary-color: #00293d;
     --secondary-color: #00293d;
-    --font-color: #fff;
-    --bg-color: #000e14;
-    --heading-color: hsla(0,0%,100%,.6);
-    --light-opacity:1;
+    --font-color: #000;
+    --bg-color: #fff;
+    --heading-color: #00293d;
+    --light-opacity:0;
 }
 
 [data-theme="dark"] {
@@ -34,7 +34,7 @@
     --primary-color: #00293d;
     --secondary-color: #00293d;
     --font-color: #000;
-    --bg-color: #82B2CA;
+    --bg-color: #fff;
     --heading-color: rgb(236, 24, 59);
     --light-opacity:0;
 

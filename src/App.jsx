@@ -17,7 +17,6 @@ function App() {
       <Portfolio />
 
       <Contact />
-      <Footer />
     </>
   );
 }

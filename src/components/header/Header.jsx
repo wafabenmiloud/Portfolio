@@ -10,7 +10,7 @@ import DarkMode from '../DarkMode/DarkMode'
 const Header = () => {
   return (
     <header>
-
+{/*<DarkMode /> */}
       
       <div className="lamp_wrapper">
 
@@ -30,9 +30,9 @@ const Header = () => {
 
 
         <div className='header__socials'>
-            <a href="https://www.linkedin.com/in/wafa-ben-miloud-382126181/" target="_blank"><BsLinkedin className='header__socials__link'/></a>
-            <a href="https://github.com/wafabenmiloud" target="_blank"><BsGithub className='header__socials__link'/></a>
-            <a href="https://www.upwork.com/freelancers/~01fc5f7163d2b11b28?viewMode=1" target="_blank"><SiUpwork className='header__socials__link'/></a>
+            <a href="https://www.linkedin.com/in/wafa-ben-miloud-382126181/" target="_blank"><BsLinkedin/></a>
+            <a href="https://github.com/wafabenmiloud" target="_blank"><BsGithub/></a>
+            <a href="https://www.upwork.com/freelancers/~01fc5f7163d2b11b28?viewMode=1" target="_blank"><SiUpwork/></a>
           </div>
           <div className="block">
             <div className="blob">

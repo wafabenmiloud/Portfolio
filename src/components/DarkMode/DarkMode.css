@@ -11,7 +11,7 @@
 
 .display {
     width: 100%;
-    padding: 50px;
+    padding:50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -80,4 +80,12 @@
 }
 .dark_mode_label:active .circle {
     width: 200px;
+}
+@media screen and (max-width: 1280px) {
+
+.display {
+    padding:0 20px;
+  
+}
+
 }

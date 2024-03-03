@@ -5,10 +5,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 10%;
+    width: 100%;
+    
 }
 .contact__option{
     background: var(--secondary-color);
-    padding: 1.2rem;
+    padding: 1.2rem 0;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
@@ -17,7 +20,7 @@
 }
 .contact__option:hover{
     background: transparent;
-    border-color: var(-color-primary-variant);
+    border-color: var(--primary-color);
 }
 .contact__option-icon{
     font-size: 1.5rem;
@@ -36,6 +39,7 @@
     .contact__options{
        
         flex-wrap: wrap;
+        margin-bottom: 5rem;
       
     }
     .contact__option{
