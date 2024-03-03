@@ -180,6 +180,11 @@
     .portfolio__container .card .title__content h3{
       font-size: 0.8rem;
   }
+  .portfolio__container .card .tags .tag{
+    color: #d8bfbf;
+    font-size: 0.7rem;    color: var(--font-color);
+
+}
 }
 @media screen and (max-width: 600px) {
   .portfolio__container {
