@@ -10,8 +10,8 @@ import DarkMode from '../DarkMode/DarkMode'
 const Header = () => {
   return (
     <header>
-{/*<DarkMode /> */}
-      
+
+      <DarkMode />
       <div className="lamp_wrapper">
 
         <img src={lamp} alt="lamp" className="lamp" />

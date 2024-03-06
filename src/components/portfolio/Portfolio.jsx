@@ -20,6 +20,7 @@ const data = [
     code: "https://github.com/wafabenmiloud/quiz",
     demo: "https://quiz-p9dl.onrender.com/",
     skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
+    showdemo: true
   },
   {
     id: 2,
@@ -30,6 +31,8 @@ const data = [
     code: "https://github.com/wafabenmiloud/brainGym",
     demo: "https://brain-gym.vercel.app/",
     skills: ["HTML", "CSS", "React JS"],
+    showdemo: true
+
   },
   {
     id: 3,
@@ -40,6 +43,8 @@ const data = [
     code: "https://github.com/wafabenmiloud/Govact",
     demo: "https://govact.onrender.com/",
     skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
+    showdemo: true
+
   },
   {
     id: 4,
@@ -50,6 +55,8 @@ const data = [
     code: "https://github.com/wafabenmiloud/blogApp",
     demo: "https://blog-xj3p.onrender.com/",
     skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
+    showdemo: true
+
   },
   {
     id: 5,
@@ -60,6 +67,7 @@ const data = [
     code: "https://github.com/wafabenmiloud/medapp",
     demo: "",
     skills: ["Flutter", "Node JS", "MongoDB"],
+    showdemo: false
   },
   {
     id: 6,
@@ -69,7 +77,9 @@ const data = [
       "Welcome to IoT Innovate, the collaborative hub for IoT developers around the world. Join our community today and be a part of the IoT revolution!",
     code: "https://github.com/wafabenmiloud/cot",
     demo: "https://cot.vercel.app/",
-    skills: ["HTML", "CSS", "JavaScript","Bootstrap"],
+    skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    showdemo: true
+
   },
   {
     id: 7,
@@ -80,6 +90,7 @@ const data = [
     code: "https://github.com/wafabenmiloud/CoworkingApp",
     demo: "",
     skills: ["Flutter", "MySQL"],
+    showdemo: false
   },
   {
     id: 8,
@@ -90,6 +101,8 @@ const data = [
     code: "https://github.com/wafabenmiloud/ElectionGame",
     demo: "",
     skills: ["Flutter", "Sqlite"],
+    showdemo: false
+
   },
   {
     id: 9,
@@ -100,6 +113,8 @@ const data = [
     code: "https://github.com/wafabenmiloud/math",
     demo: "",
     skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
+    showdemo: false
+
   },
 ];
 const Portfolio = () => {
@@ -110,39 +125,45 @@ const Portfolio = () => {
 
       <div className="portfolio__container">
         {data.map(
-          ({ id, image, title, description, code, demo, skills, video }) => {
+          ({ id, image, title, description, code, demo, skills, video, showdemo }) => {
             return (
               <div key={id} className="card">
                 <div className="img">
-                    <img src={image} alt=""/>
+                  <img src={image} alt="" />
                 </div>
-               <div className="text">
-               <div className="title__content">
-                  <h3>{title}</h3>
-                  <hr className="divider" />
-                </div>
-                <p className="desc__content">{description}</p>
-                <div>
-                  <ul className="tags">
-                    {skills.map((skill, index) => {
-                      return (
-                        <li className="tag" key={index}>
-                          {skill}
-                        </li>
-                      );
-                    })}
+                <div className="text">
+                  <div className="title__content">
+                    <h3>{title}</h3>
+                    <hr className="divider" />
+                  </div>
+                  <p className="desc__content">{description}</p>
+                  <div>
+                    <ul className="tags">
+                      {skills.map((skill, index) => {
+                        return (
+                          <li className="tag" key={index}>
+                            {skill}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+
+                  <ul className="content">
+                    {/* <a href={code} className="btn" target="_blank">
+                    Code Source
+                  </a> */}
+
+                    {
+                      showdemo && (
+                        <a href={demo} className="btn" target="_blank">
+                          Live Demo
+                        </a>
+                      )
+                    }
+
                   </ul>
                 </div>
-
-                <ul className="content">
-                  <a href={code} className="btn" target="_blank">
-                    Code Source
-                  </a>
-                  <a href={demo} className="btn" target="_blank">
-                    Live Demo
-                  </a>
-                </ul>
-               </div>
               </div>
             );
           }
