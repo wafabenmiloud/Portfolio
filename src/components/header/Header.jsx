@@ -11,7 +11,6 @@ const Header = () => {
   return (
     <header>
 
-      <DarkMode />
       <div className="lamp_wrapper">
 
         <img src={lamp} alt="lamp" className="lamp" />

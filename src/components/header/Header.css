@@ -2,7 +2,7 @@ header {
   overflow: hidden;
   background: url(../../assets/bgblobs.svg) no-repeat bottom / cover;
   color: var(--bg-color);
-  padding: 0;
+  padding: 150px 0;
 }
 .lamp_wrapper{
   width: 80px;
