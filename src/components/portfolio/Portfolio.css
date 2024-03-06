@@ -18,7 +18,7 @@
 }
 .portfolio__container .card .img {
     background-color: var(--secondary-color);
-    border-radius: 1.7rem;
+    border-radius: 1.7rem 1.7rem 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: auto;
     overflow: hidden;
