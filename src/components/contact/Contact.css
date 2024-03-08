@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 10%;
-    width: 100%;
+    width: 40%;
+    margin: 10% auto;
     
 }
 .contact__option{
@@ -34,6 +34,25 @@
 
 }
 
+@media screen and (max-width:1920px) {
+    
+    .contact__options{
+       
+        width: 60%;
+        margin: 10% auto;
+        
+    }
+}
+@media screen and (max-width:1920px) {
+    
+    .contact__options{
+       
+        width: 80%;
+        margin: 10% auto;
+        
+    }
+}
+
 @media screen and (max-width:768px) {
     
     .contact__options{
@@ -45,5 +64,13 @@
     .contact__option{
       
         width: 80%;
+    }
+}
+@media screen and (max-width:500px) {
+    
+   
+    .contact__option{
+      
+        width: 95%;
     }
 }
