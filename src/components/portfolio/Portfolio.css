@@ -124,13 +124,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .portfolio__container {
-    display: grid;
-  grid-template-columns: repeat(3,1fr);
-  width: 80%;
-  margin: auto;
-    gap: 1rem;
-  }
+
     .portfolio__container .card{
         flex-direction: column;
         padding: 0rem;
