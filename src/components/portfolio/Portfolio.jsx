@@ -9,6 +9,7 @@ import quiz from "../../assets/quiz.png";
 import math from "../../assets/math.png";
 import elec from "../../assets/election.PNG";
 import cow from "../../assets/coworking.png";
+import todo from "../../assets/todo.png";
 
 const data = [
   {
@@ -19,8 +20,8 @@ const data = [
       "Welcome to MERNQuiz. Our platform is perfect for beginners and experts alike who want to test their knowledge and learn new things about this technology stack.",
     code: "https://github.com/wafabenmiloud/quiz",
     demo: "https://quiz-p9dl.onrender.com/",
-    skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
-    showdemo: true
+    skills: ["React JS", "Node JS", "MongoDB"],
+    showdemo: true,
   },
   {
     id: 2,
@@ -30,9 +31,8 @@ const data = [
       "CourseBridge is a platform designed to bridge the gap between students and the latest courses and industry news.",
     code: "https://github.com/wafabenmiloud/brainGym",
     demo: "https://brain-gym.vercel.app/",
-    skills: ["HTML", "CSS", "React JS"],
-    showdemo: true
-
+    skills: ["React JS"],
+    showdemo: true,
   },
   {
     id: 3,
@@ -42,9 +42,8 @@ const data = [
       "Hammam Lif Connect is a community-driven platform that aims to connect the residents of Hammam Lif with their local municipality. ",
     code: "https://github.com/wafabenmiloud/Govact",
     demo: "https://govact.onrender.com/",
-    skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
-    showdemo: true
-
+    skills: ["React JS", "Node JS", "MongoDB"],
+    showdemo: true,
   },
   {
     id: 4,
@@ -54,9 +53,8 @@ const data = [
       "CodeQuery is a platform where programmers from all around the world can come together to share and solve programming challenges, ask and answer questions, and collaborate on projects.",
     code: "https://github.com/wafabenmiloud/blogApp",
     demo: "https://blog-xj3p.onrender.com/",
-    skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
-    showdemo: true
-
+    skills: ["React JS", "Node JS", "MongoDB"],
+    showdemo: true,
   },
   {
     id: 5,
@@ -67,7 +65,7 @@ const data = [
     code: "https://github.com/wafabenmiloud/medapp",
     demo: "",
     skills: ["Flutter", "Node JS", "MongoDB"],
-    showdemo: false
+    showdemo: false,
   },
   {
     id: 6,
@@ -78,43 +76,47 @@ const data = [
     code: "https://github.com/wafabenmiloud/cot",
     demo: "https://cot.vercel.app/",
     skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    showdemo: true
-
+    showdemo: true,
   },
   {
     id: 7,
     image: cow,
     title: "Coworking Space",
-    description:
-      "",
+    description: "",
     code: "https://github.com/wafabenmiloud/CoworkingApp",
     demo: "",
     skills: ["Flutter", "MySQL"],
-    showdemo: false
+    showdemo: false,
   },
   {
     id: 8,
     image: elec,
     title: "Elections Game",
-    description:
-      "",
+    description: "",
     code: "https://github.com/wafabenmiloud/ElectionGame",
     demo: "",
     skills: ["Flutter", "Sqlite"],
-    showdemo: false
-
+    showdemo: false,
   },
   {
     id: 9,
     image: math,
     title: "Mathotop",
-    description:
-      "",
+    description: "",
     code: "https://github.com/wafabenmiloud/math",
     demo: "",
-    skills: ["HTML", "CSS", "React JS", "Node JS", "MongoDB"],
-    showdemo: false
-
+    skills: ["React JS", "Node JS", "MongoDB"],
+    showdemo: false,
+  },
+  {
+    id: 10,
+    image: todo,
+    title: "ToDo",
+    description: "",
+    code: "https://github.com/wafabenmiloud/TasksManager",
+    demo: "https://tasks-manager-iota.vercel.app",
+    skills: ["Next JS", "Nest JS", "PostgreSQL"],
+    showdemo: true,
   },
 ];
 const Portfolio = () => {
@@ -125,7 +127,17 @@ const Portfolio = () => {
 
       <div className="portfolio__container">
         {data.map(
-          ({ id, image, title, description, code, demo, skills, video, showdemo }) => {
+          ({
+            id,
+            image,
+            title,
+            description,
+            code,
+            demo,
+            skills,
+            video,
+            showdemo,
+          }) => {
             return (
               <div key={id} className="card">
                 <div className="img">
@@ -154,14 +166,11 @@ const Portfolio = () => {
                     Code Source
                   </a> */}
 
-                    {
-                      showdemo && (
-                        <a href={demo} className="btn" target="_blank">
-                          Live Demo
-                        </a>
-                      )
-                    }
-
+                    {showdemo && (
+                      <a href={demo} className="btn" target="_blank">
+                        Live Demo
+                      </a>
+                    )}
                   </ul>
                 </div>
               </div>
