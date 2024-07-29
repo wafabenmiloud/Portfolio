@@ -173,9 +173,9 @@ const Portfolio = () => {
                   </div>
 
                   <ul className="content">
-                    {/* <a href={code} className="btn" target="_blank">
+                     <a href={code} className="btn" target="_blank">
                     Code Source
-                  </a> */}
+                  </a> 
 
                     {showdemo && (
                       <a href={demo} className="btn" target="_blank">
