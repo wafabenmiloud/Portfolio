@@ -11,6 +11,7 @@ import elec from "../../assets/election.PNG";
 import cow from "../../assets/coworking.png";
 import todo from "../../assets/todo.png";
 import bookLover from "../../assets/bookLover.png";
+import movies from "../../assets/movies.png";
 
 const data = [
   {
@@ -128,6 +129,16 @@ const data = [
     code: "https://github.com/wafabenmiloud/TasksManager",
     demo: "https://tasks-manager-iota.vercel.app",
     skills: ["Next JS", "Nest JS", "PostgreSQL"],
+    showdemo: true,
+  },
+  {
+    id: 11,
+    image: movies,
+    title: "Redux",
+    description: "",
+    code: "https://github.com/wafabenmiloud/Redux",
+    demo: "https://movies-kappa-three.vercel.app",
+    skills: ["React JS"],
     showdemo: true,
   }
 ];
