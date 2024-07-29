@@ -10,6 +10,7 @@ import math from "../../assets/math.png";
 import elec from "../../assets/election.PNG";
 import cow from "../../assets/coworking.png";
 import todo from "../../assets/todo.png";
+import bookLover from "../../assets/bookLover.png";
 
 const data = [
   {
@@ -116,6 +117,16 @@ const data = [
     code: "https://github.com/wafabenmiloud/TasksManager",
     demo: "https://tasks-manager-iota.vercel.app",
     skills: ["Next JS", "Nest JS", "PostgreSQL"],
+    showdemo: true,
+  },
+  {
+    id: 11,
+    image: bookLover,
+    title: "BookLover - Digital library",
+    description: "Online Library offering standard library functions such as searching for a book, borrowing a book, and returning a book...",
+    code: "https://github.com/wafabenmiloud/DigitalLibrary",
+    demo: "https://digital-library-tawny.vercel.app",
+    skills: ["React JS", "PHP", "MySql"],
     showdemo: true,
   },
 ];
