@@ -26,6 +26,16 @@ const data = [
   },
   {
     id: 2,
+    image: bookLover,
+    title: "BookLover - Digital library",
+    description: "Online Library offering standard library functions such as searching for a book, borrowing a book, and returning a book...",
+    code: "https://github.com/wafabenmiloud/DigitalLibrary",
+    demo: "https://digital-library-tawny.vercel.app",
+    skills: ["React JS", "PHP", "MySql"],
+    showdemo: true,
+  },
+  /*   {
+    id: 2,
     image: BrainGym,
     title: "CourseBridge",
     description:
@@ -34,7 +44,8 @@ const data = [
     demo: "https://brain-gym.vercel.app/",
     skills: ["React JS"],
     showdemo: true,
-  },
+  },*/
+
   {
     id: 3,
     image: Go,
@@ -118,17 +129,7 @@ const data = [
     demo: "https://tasks-manager-iota.vercel.app",
     skills: ["Next JS", "Nest JS", "PostgreSQL"],
     showdemo: true,
-  },
-  {
-    id: 11,
-    image: bookLover,
-    title: "BookLover - Digital library",
-    description: "Online Library offering standard library functions such as searching for a book, borrowing a book, and returning a book...",
-    code: "https://github.com/wafabenmiloud/DigitalLibrary",
-    demo: "https://digital-library-tawny.vercel.app",
-    skills: ["React JS", "PHP", "MySql"],
-    showdemo: true,
-  },
+  }
 ];
 const Portfolio = () => {
   return (
